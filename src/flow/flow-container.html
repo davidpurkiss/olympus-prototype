@@ -1,0 +1,7 @@
+﻿<template>
+    <div>
+        <template repeat.for="flowItem of flowPath">
+            <compose model.bind="flowItem" view-model="${flowItem.type}"></compose>
+        </template>
+    </div>
+</template>
